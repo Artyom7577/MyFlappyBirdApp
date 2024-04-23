@@ -30,7 +30,6 @@ public class MainThread extends Thread {
         while (running) {
             startTime = System.nanoTime();
             canvas = null;
-
             try {
                 canvas = surfaceHolder.lockCanvas();
                 synchronized (surfaceHolder) {
